@@ -1,0 +1,24 @@
+1. zamjenimo action i method
+2. dodajmo @csrf u formu
+3. pogledajmo u bazu
+4. u store metodu dodajmo return redirect()->back(); ili view koji želimo npr. return redirect()->route('books.index');
+5. promijenimo u indexu da se poziva samo model bez injectanja u argumente, $books = Book::all();
+6. izvadimo u zaseban books.index file ispis iz baze i dodajmo liniju return view('books.index', compact('books'));
+7. napravimo books.index i prebacimo one ispise iz index metode
+8. dodajmo objekt modela u show kako bi dohvatili po id-u odredjeni unos Book::find($id); , a id mu poslati kao argument.
+   Pogledajmo niz dobiven pomocu dd komande.
+   
+9. Dodati edit prema id-u i skupiti podatke iz baze u formu prema returnu svega za taj id i u bladeu ispisati
+   dodati id za pretragu preko modela i uz pomoc find
+   u edit blade dodati za input polje value="{{$test->naslov}} i za ostale
+   u formi od edit bladea : action="{{route('books.update', $editid->id)}}"
+
+10. update
+11 dovrsiti delete
+12  dovrsiti destroy
+
+
+13. srediti FE prikaze
+14. dodati polje u bazu za opis knjige
+14. dodati link za slike knjige u bazu i to prilazivati na pocetnoj skupa sa naslovom
+15. Za show prilazivati sve o knjizi sta ima u bazi. Mozda dodati i neka skrivena polja jos itd.
