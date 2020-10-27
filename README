@@ -22,3 +22,19 @@
 14. dodati polje u bazu za opis knjige
 14. dodati link za slike knjige u bazu i to prilazivati na pocetnoj skupa sa naslovom
 15. Za show prilazivati sve o knjizi sta ima u bazi. Mozda dodati i neka skrivena polja jos itd.
+
+
+
+
+------------------------
+
+- dodati u bazu link za slike knjiga i opis knjiga
+- slike spremiti unutar projekta
+- create.blade.php updejtati sa poljem opis
+- definirati defult layout koji ce se nasljedjivati kasnije na ostale blades
+- definirati blades za ostale linkove u meniju (koristiti default layout)
+- opcionalno izmijeniti FE auth dijela
+- Nakon prijave prikazati CRUD operacije po knjigama. 
+  Botun za unos (create metoda)
+  Botune Detaljnije (show metoda), Ažuriraj i Izbriši za svaku izlistanu knjigu kao na pocetnoj stranici
+  koristiti default layout i puniti ga odredjenim sadrzajem
