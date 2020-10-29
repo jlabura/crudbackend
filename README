@@ -29,6 +29,8 @@
 ------------------------
 
 - dodati u bazu link za slike knjiga i opis knjiga
+  hint: php artisan migrate --path=/database/migrations/2020_10_29_161657_update_opis_link_books_table.php
+
 - slike spremiti unutar projekta
 - create.blade.php updejtati sa poljem opis
 - definirati defult layout koji ce se nasljedjivati kasnije na ostale blades

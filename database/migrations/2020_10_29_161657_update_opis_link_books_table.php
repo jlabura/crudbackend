@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateBooksTable extends Migration
+class UpdateOpisLinkBooksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,8 +15,8 @@ class UpdateBooksTable extends Migration
     {
         Schema::table('books', function (Blueprint $table) {
             //
-
-            $table->string('kupac');
+            $table->string('slikaLink');
+            $table->string('opis');
         });
     }
 
@@ -29,7 +29,8 @@ class UpdateBooksTable extends Migration
     {
         Schema::table('books', function (Blueprint $table) {
             //
-            $table->dropColumn('kupac');
+            $table->dropColumn('slikaLink');
+            $table->dropColumn('opis');
         });
     }
 }

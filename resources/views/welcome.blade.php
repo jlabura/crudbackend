@@ -71,10 +71,10 @@
     @foreach($books as $item)
    
         <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="{{$item->slikaLink}}" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title">{{$item->naslov}}</h5>
-            <p class="card-text">Opis...</p>
+            <p class="card-text">{{$item->opis}}</p>
         </div>
         <div class="card-footer">
             <small class="text-muted">{{$item->autor}}</small>

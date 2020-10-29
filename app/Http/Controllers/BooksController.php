@@ -70,6 +70,7 @@ class BooksController extends Controller
         $books->naslov = $request->naslov;
         $books->autor = $request->autor;
         $books->isbn = $request->isbn;
+        $books->opis = $request->opis;
 
         $books->save();
 

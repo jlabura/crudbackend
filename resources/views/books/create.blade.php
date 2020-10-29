@@ -17,6 +17,8 @@
   <input type="text" id="autor" name="autor"><br>
   <label for="autor">ISBN:</label><br>
   <input type="text" id="isbn" name="isbn"><br>
+  <label for="opis">Opis:</label><br>
+  <input type="text" id="opis" name="opis"><br>
 
   <input type="submit" value="Unesi">
 
