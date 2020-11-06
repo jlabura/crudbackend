@@ -20,13 +20,18 @@ Route::get('/', function (App\Book $book) {
     return view('welcome', compact('books'));
 });
 
-/*Route::get('/contact', function () {
+
+
+
+
+
+Route::get('/contact', function () {
 
     return view('contact');
-});*/
+})->name('contact');;
 
 
-//Route::resource('books', 'BooksController')->middleware('auth');
+//Route::resource('books', 'BooksController')->middleware('auth','auth.admin');;
 Route::resource('books', 'BooksController');
 
 

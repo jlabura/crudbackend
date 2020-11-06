@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class BooksController extends Controller
 {
 
-    public function __construct(){
+   public function __construct(){
 
-      $this->middleware('auth');
+      $this->middleware('auth.admin'); //provjeriti za kombinaciju auth i auth.admin
 
 
     }
